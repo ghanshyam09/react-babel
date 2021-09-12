@@ -1,12 +1,15 @@
 {
-  "name": "react-setup-tutorial",
+  "name": "react-babel",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://ghanshyam09.github.io/react-babel/",
   "scripts": {
     "start": "webpack --mode=development",
     "build": "webpack --mode=production",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +20,7 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.2",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
